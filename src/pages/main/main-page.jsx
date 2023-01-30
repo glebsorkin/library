@@ -1,5 +1,17 @@
+import { BooksSection } from '../../components/books-section';
+import { Categories } from '../../components/categories';
+import { Footer } from '../../components/footer';
+import { Header } from '../../components/header';
+
+import '../../scss/app.scss';
+
 export const MainPage = () => (
-    <section className='main-page'>
-        <div>Main-page</div>
-    </section>
+  <div className='wrapper'>
+    <Header />
+    <main className='main content'>
+      <Categories />
+      <BooksSection /> 
+    </main>
+    <Footer />
+  </div>
 );

@@ -24,7 +24,8 @@ module.exports = {
         indent: 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
         '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^action' }],
         "no-nested-ternary": "off",
-        "no-unneeded-ternary": "off"
+        "no-unneeded-ternary": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     },
     ignorePatterns: ['coverage', 'cypress.config.ts'],
 };
